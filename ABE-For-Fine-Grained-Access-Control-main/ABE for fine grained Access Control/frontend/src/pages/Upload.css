@@ -1,0 +1,81 @@
+.upload-page { padding: 2rem; max-width: 700px; margin: 0 auto; }
+
+.upload-header { margin-bottom: 1.75rem; }
+.upload-header h2 { font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; }
+.upload-header p { color: var(--text2); font-size: 0.82rem; margin-top: 0.3rem; }
+
+.upload-form { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.drop-zone {
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--surface);
+}
+.drop-zone:hover, .drop-zone.drag-over {
+  border-color: var(--accent);
+  background: rgba(124,109,255,0.05);
+}
+.drop-zone.has-file { border-style: solid; border-color: var(--accent); }
+
+.drop-hint { display: flex; flex-direction: column; gap: 0.4rem; color: var(--text2); }
+.drop-icon { font-size: 1.8rem; margin-bottom: 0.25rem; }
+.drop-sub { font-size: 0.75rem; }
+
+.file-selected {
+  display: flex; align-items: center; gap: 0.75rem;
+  justify-content: center; flex-wrap: wrap;
+}
+.file-icon { font-size: 1.4rem; }
+.file-name { color: var(--text); font-size: 0.9rem; }
+.file-size { color: var(--text2); font-size: 0.78rem; }
+.remove-file {
+  background: none; border: none; color: var(--danger);
+  cursor: pointer; font-size: 0.9rem; padding: 0.2rem;
+}
+
+.policy-section { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.policy-header {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.policy-header label { font-size: 0.75rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.toggle-custom {
+  background: none; border: 1px solid var(--border); border-radius: 5px;
+  color: var(--text2); font-family: var(--font-mono); font-size: 0.75rem;
+  padding: 0.3rem 0.7rem; cursor: pointer; transition: all 0.2s;
+}
+.toggle-custom:hover { border-color: var(--accent); color: var(--accent); }
+
+.policy-hint { font-size: 0.72rem; color: var(--text2); margin-top: 0.3rem; }
+
+.preset-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+
+.preset-btn {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 0.85rem 1rem;
+  text-align: left; cursor: pointer; transition: all 0.2s;
+  display: flex; flex-direction: column; gap: 0.3rem;
+}
+.preset-btn:hover { border-color: var(--accent); background: rgba(124,109,255,0.05); }
+.preset-btn.selected { border-color: var(--accent); background: rgba(124,109,255,0.1); }
+
+.preset-label { font-family: var(--font-mono); font-size: 0.82rem; color: var(--text); }
+.preset-policy { font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent); }
+
+.policy-preview {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  background: rgba(124,109,255,0.08);
+  border: 1px solid rgba(124,109,255,0.2);
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+.preview-label { color: var(--text2); white-space: nowrap; }
+.policy-preview code { color: var(--accent); font-family: var(--font-mono); }
+
+.upload-btn { padding: 0.85rem; font-size: 0.9rem; }

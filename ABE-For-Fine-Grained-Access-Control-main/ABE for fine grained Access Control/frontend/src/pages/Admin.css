@@ -1,0 +1,62 @@
+.admin-page { padding: 2rem; max-width: 1000px; margin: 0 auto; }
+
+.admin-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.admin-header h2 { font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; }
+.admin-header p { color: var(--text2); font-size: 0.82rem; margin-top: 0.2rem; }
+
+.stats-row { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  display: flex; flex-direction: column; gap: 0.2rem;
+}
+.stat-num { font-family: var(--font-head); font-size: 1.8rem; font-weight: 800; color: var(--accent); }
+.stat-label { font-size: 0.75rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.create-form { margin-bottom: 1.5rem; }
+.create-form h3 { font-family: var(--font-head); font-size: 1rem; margin-bottom: 1rem; }
+.create-form form { display: flex; flex-direction: column; gap: 1rem; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.attr-picker { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem; }
+
+.attr-btn {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 5px; color: var(--text2);
+  font-family: var(--font-mono); font-size: 0.75rem;
+  padding: 0.3rem 0.6rem; cursor: pointer; transition: all 0.15s;
+}
+.attr-btn:hover { border-color: var(--accent); color: var(--accent); }
+.attr-btn.selected { background: rgba(124,109,255,0.15); border-color: var(--accent); color: var(--accent); }
+
+.users-table { padding: 0; overflow: hidden; }
+
+.table-head {
+  display: grid; grid-template-columns: 1.2fr 2.5fr 0.8fr 1.2fr;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface2);
+  font-size: 0.7rem; color: var(--text2);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-row {
+  display: grid; grid-template-columns: 1.2fr 2.5fr 0.8fr 1.2fr;
+  padding: 1rem 1.25rem; align-items: center;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem; transition: background 0.15s;
+}
+.table-row:last-child { border-bottom: none; }
+.table-row:hover { background: var(--surface2); }
+
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.attr-picker.small .attr-btn { font-size: 0.7rem; padding: 0.2rem 0.5rem; }
+
+.action-col { display: flex; gap: 0.4rem; }
